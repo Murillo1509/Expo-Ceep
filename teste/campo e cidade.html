@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexão Campo & Cidade - Paraná</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header role="banner">
+        <h1>🌾🏙️ Conexão Campo & Cidade - Paraná</h1>
+        <div class="acessibilidade">
+    <button onclick="toggleContrast()" aria-label="Ativar ou desativar modo alto contraste">
+        🌓 Alto Contraste
+    </button>
+    <button onclick="backToTop()" aria-label="Voltar ao topo da página">
+        ⬆️ Voltar ao Topo
+    </button>
+    <span id="contrast-status" aria-live="polite" style="margin-left: 10px;"></span>
+</div>
+<div class="audio-leitura">
+    <button onclick="lerPagina()" aria-label="Ler conteúdo da página em áudio">🔊 Ler Página</button>
+    <button onclick="pararLeitura()" aria-label="Parar leitura em áudio">⏹️ Parar Leitura</button>
+</div>
+
+    </header>
+
+    <main role="main">
+        <section class="content" aria-label="Apresentação da conexão campo e cidade">
+            <img src="imagens/unnamed.jpg" 
+                 alt="Bandeira do estado do Paraná" 
+                 tabindex="0">
+            <div class="text">
+                <h2>Unindo Saberes, Culturas e Pessoas</h2>
+                <p>Celebramos a harmonia entre o campo e a cidade no nosso querido Paraná. Juntos, construímos um futuro sustentável, com respeito à natureza, à tradição e à inovação.</p>
+                <button onclick="celebrate()" aria-label="Clique para comemorar a conexão campo e cidade">Clique para comemorar 🎉</button>
+                <button onclick="lerTexto('Texto da etapa de plantio')" aria-label="Ler etapa de plantio">🔊 Ouvir</button>
+
+                <p id="message" aria-live="polite"></p>
+            </div>
+        </section>
+ <section class="feira" id="feira" aria-label="Informações sobre a Feira Show Rural Coopavel">
+            <h2>🚜 Show Rural Coopavel - A Feira do Agro</h2>
+            <img src="imagens/images.jfif" 
+                 alt="Logo da feira Show Rural Coopavel" 
+                 tabindex="0">
+            <p>
+                O <strong>Show Rural Coopavel</strong> é uma das maiores feiras de tecnologia agropecuária do Brasil e da América Latina.
+                Acontece todos os anos na cidade de <strong>Cascavel, Paraná</strong>. Seu principal objetivo é apresentar as mais 
+                modernas tecnologias para aumentar a produtividade no campo, sempre com foco em sustentabilidade e inovação.
+            </p>
+            <p>
+                A feira conecta produtores rurais, empresas, pesquisadores, estudantes e toda a sociedade. São milhares de 
+                expositores, palestras, demonstrações de máquinas agrícolas, soluções para o agronegócio, inovação e tecnologia 
+                para o campo e para a cidade.
+            </p>
+            <p>
+                Participar do Show Rural é uma oportunidade incrível para entender como o campo e a cidade trabalham juntos 
+                para gerar desenvolvimento econômico, sustentabilidade e qualidade de vida para todos.
+            </p>
+            <a href="https://www.showrural.com.br/" target="_blank" aria-label="Abrir site oficial do Show Rural">
+                <button>Saiba mais no site oficial 🌐</button>
+            </a>
+        </section>
+
+        <section class="agricultura" id="agricultura" aria-label="Principais atividades agrícolas e pecuárias no Paraná">
+            <h2>🌽 Agricultura e Pecuária no Paraná</h2>
+            <p>O Paraná é um dos maiores produtores agrícolas do Brasil. Sua diversidade no campo contribui diretamente para o abastecimento nacional e para as exportações.</p>
+            <div class="cards">
+                <div class="card" tabindex="0">
+                    <h3>🌱 Soja</h3>
+                    <p>O Paraná é um dos líderes na produção de soja, sendo um dos produtos mais exportados do estado.</p>
+                </div>
+                <div class="card" tabindex="0">
+                    <h3>🌽 Milho</h3>
+                    <p>Fundamental tanto para alimentação humana quanto para a pecuária, o milho é cultivado em grande escala.</p>
+                </div>
+                <div class="card" tabindex="0">
+                    <h3>🌾 Trigo</h3>
+                    <p>O estado é referência na produção de trigo no Brasil, abastecendo padarias e indústrias alimentícias.</p>
+                </div>
+                <div class="card" tabindex="0">
+                    <h3>☕ Café</h3>
+                    <p>O norte do Paraná é conhecido pela produção de café de excelente qualidade, com reconhecimento nacional.</p>
+                </div>
+                <div class="card" tabindex="0">
+                    <h3>🫘 Feijão</h3>
+                    <p>Alimento básico na mesa dos brasileiros, o Paraná é um dos maiores produtores de feijão do país.</p>
+                </div>
+                <div class="card" tabindex="0">
+                    <h3>🥬 Hortaliças e Frutas</h3>
+                    <p>O estado se destaca na produção de hortaliças, frutas, além de sistemas de agricultura familiar.</p>
+                </div>
+            </div>
+            <section class="processo-agricola" id="processo" aria-label="Processo de Plantio, Fertilização e Colheita">
+    <h2>🌾 Processo Agrícola no Paraná</h2>
+    <p>O ciclo agrícola envolve várias etapas fundamentais para garantir uma produção eficiente, sustentável e de alta qualidade. No Paraná, o cuidado com o solo, a escolha das sementes e o manejo adequado são essenciais.</p>
+
+    <div class="etapas">
+        
+        <div class="etapa" tabindex="0">
+            <h3>🌱 Plantio</h3>
+            <img src="imagens/50824042548-818726bd92-c.webp" alt="Máquina realizando o plantio de soja no Paraná" class="imagem-processo">
+            <p>O processo começa com a preparação do solo, que inclui:</p>
+            <ul>
+                <li>✔️ Análise de solo</li>
+                <li>✔️ Correção da acidez com calcário</li>
+                <li>✔️ Aragem e gradagem</li>
+                <li>✔️ Escolha de sementes de alta qualidade</li>
+                <li>✔️ Semeadura mecânica ou manual</li>
+            </ul>
+        </div>
+
+      
+        <div class="etapa" tabindex="0">
+            <h3>🧪 Fertilização</h3>
+            <img src="imagens/129249-pulverizador-agricola-tudo-o-que-voce-precisa-saber.jpg" alt="Fertilizante sendo aplicado no solo agrícola" class="imagem-processo">
+            <p>A fertilização é essencial para o desenvolvimento das plantas. Ela inclui:</p>
+            <ul>
+                <li>✔️ Adubação de base</li>
+                <li>✔️ Nitrogênio, fósforo, potássio e micronutrientes</li>
+                <li>✔️ Adubação de cobertura</li>
+                <li>✔️ Uso equilibrado de fertilizantes</li>
+            </ul>
+        </div>
+
+        
+        <div class="etapa" tabindex="0">
+            <h3>🚜 Colheita</h3>
+            <img src="imagens/Agro_ColheitaDeSoja_4FEV25_Getty-768x512.webp" alt="Colheita de soja utilizando colheitadeira no Paraná" class="imagem-processo">
+            <p>A colheita é feita no ponto ideal para garantir qualidade:</p>
+            <ul>
+                <li>✔️ Monitoramento da maturação</li>
+                <li>✔️ Uso de colheitadeiras modernas</li>
+                <li>✔️ Evitar perdas na lavoura</li>
+               <li>✔️ Armazenamento seguro dos grãos</li>
+
+    </div>
+</section>
+<section class="feira" aria-label="Outras Feiras Agropecuárias do Paraná">
+    <h2>🌟 Outras Feiras do Agro no Paraná</h2>
+
+    <div class="cards">
+        <div class="card">
+            <img src="imagens/banner-expolondrina-2025.png" alt="ExpoLondrina">
+            <h3>🌾 ExpoLondrina</h3>
+            <p>Uma das maiores feiras do agro brasileiro, integrando tecnologia, negócios e cultura rural em Londrina.</p>
+            <a href="https://www.expolondrina.com.br/" target="_blank">
+                <button>Visitar Site 🌐</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="imagens/6029438c00010ca0c27668c422913efb.webp" alt="ExpoFrísia">
+            <h3>🥛 Expoleite & ExpoFrísia</h3>
+            <p>Referência nacional na pecuária leiteira, genética e inovação para produtores em Castro.</p>
+            <a href="https://www.expofrisia.com.br/" target="_blank">
+                <button>Visitar Site 🌐</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="imagens/agro bit.jpg" alt="AgroBIT Brasil">
+            <h3>🚀 AgroBIT Brasil</h3>
+            <p>Evento de inovação, startups e tecnologia para o agronegócio, com foco na agricultura digital.</p>
+            <a href="https://www.agrobitbrasil.com.br/" target="_blank">
+                <button>Visitar Site 🌐</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="imagens/tecnoagro.png" alt="TecnoAgro Paraná">
+            <h3>🚜 TecnoAgro Paraná</h3>
+            <p>Feira de Maripá que destaca máquinas, insumos e práticas sustentáveis no agro paranaense.</p>
+            <a href="https://www.tecnoagro.agr.br" target="_blank">
+                <button>Visitar Site 🌐</button>
+            </a>
+        </div>
+    </div>
+</section> 
+<section class="pecuaria" id="pecuaria" aria-label="Setor pecuário do Paraná">
+    <h2>🐄 Pecuária no Paraná</h2>
+    <p>O estado do Paraná é um dos principais polos da pecuária no Brasil, destacando-se na produção de carne bovina, suína e avícola. A modernização do setor e a adoção de práticas sustentáveis fortalecem a economia e a exportação.</p>
+    <div class="setores">
+        <h3>📌 Principais Setores da Pecuária</h3>
+        <ul>
+            <li>🐂 <strong>Bovinos para corte</strong> – Grandes fazendas e genética avançada garantem carne de alta qualidade.</li>
+            <li>🥛 <strong>Produção de leite</strong> – Cooperativas e indústrias processam o leite, abastecendo mercados nacionais e internacionais.</li>
+            <li>🐖 <strong>Suinocultura</strong> – O Paraná é referência na criação e exportação de carne suína.</li>
+            <li>🐔 <strong>Avicultura</strong> – Produção robusta de frangos e ovos, com tecnologia de ponta.</li>
+        </ul>
+    </div>
+
+    <div class="empresas">
+        <h3>🏢 Empresas de Destaque</h3>
+        <p>O setor pecuário paranaense conta com grandes empresas que impulsionam a economia e exportação.</p>
+        
+        <div class="cards">
+            <div class="card">
+                <img src="imagens/unnamed1.jpg" alt="Jatobá Agro e Pecuária LTDA">
+                <h3>✅ Jatobá Agro e Pecuária LTDA</h3>
+                <p>Especialista em bovinos de corte.</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/images (1).jfif" alt="Rio Paraná Holding">
+                <h3>✅ Rio Paraná Holding</h3>
+                <p>Criadores de gado premium.</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/redes-1920w.webp" alt="Agropecuária B Laffranchi LTDA">
+                <h3>✅ Agropecuária B Laffranchi LTDA</h3>
+                <p>Forte atuação na pecuária bovina.</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/GLOBOAVES-SAO-PAULO-AGROAVICOLA-LTDA-EM-RECUPERACAO-JUDICIAL-EM-RECUPERACAO-JUDICIAL.webp" alt="Globoaves São Paulo Agroavícola LTDA">
+                <h3>✅ Globoaves São Paulo Agroavícola LTDA</h3>
+                <p>Produção de aves e genética avançada.</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/facebook-cover.png" alt="Frigorífico Friella LTDA">
+                <h3>✅ Frigorífico Friella LTDA</h3>
+                <p>Líder na produção e exportação de carne suína.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="acessibilidade">
+        <button onclick="lerTexto('Informações sobre pecuária')" aria-label="Ler sobre pecuária">🔊 Ouvir</button>
+    </div>
+</section>
+
+          
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2025 Conexão Campo & Cidade - Paraná</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
